@@ -11,6 +11,7 @@ using R5T.F0049;
 using R5T.F0051;
 using R5T.F0055;
 using R5T.F0056;
+using R5T.F0063;
 
 
 namespace R5T.F0045
@@ -30,5 +31,6 @@ namespace R5T.F0045
         public static ISolutionFileOperator SolutionFileOperator { get; } = F0024.SolutionFileOperator.Instance;
         public static ISolutionNameOperator SolutionNameOperator { get; } = F0048.SolutionNameOperator.Instance;
         public static ISolutionOperator SolutionOperator { get; } = F0049.SolutionOperator.Instance;
+        public static ISolutionOperations SolutionOperations { get; } = F0063.SolutionOperations.Instance;
     }
 }
