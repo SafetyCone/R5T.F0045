@@ -28,9 +28,9 @@ namespace R5T.F0045
         public static IRepositoryDescriptionOperator RepositoryDescriptionOperator { get; } = F0046.RepositoryDescriptionOperator.Instance;
         public static IRepositoryNameOperator RepositoryNameOperator { get; } = F0046.RepositoryNameOperator.Instance;
         public static F0056.IRepositoryOperator RepositoryOperator { get; } = F0056.RepositoryOperator.Instance;
-        public static ISolutionFileOperator SolutionFileOperator { get; } = F0024.SolutionFileOperator.Instance;
+        public static F0063.ISolutionFileOperator SolutionFileOperator { get; } = F0063.SolutionFileOperator.Instance;
         public static ISolutionNameOperator SolutionNameOperator { get; } = F0048.SolutionNameOperator.Instance;
-        public static ISolutionOperator SolutionOperator { get; } = F0049.SolutionOperator.Instance;
-        public static ISolutionOperations SolutionOperations { get; } = F0063.SolutionOperations.Instance;
+        public static F0049.ISolutionOperator SolutionOperator { get; } = F0049.SolutionOperator.Instance;
+        public static F0063.ISolutionOperations SolutionOperations { get; } = F0063.SolutionOperations.Instance;
     }
 }

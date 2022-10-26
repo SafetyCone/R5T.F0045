@@ -339,7 +339,7 @@ namespace R5T.F0045
 				constructionProjectNamespaceName);
 
 			// Add project reference to library project to the construction project.
-			Instances.ProjectFileOperator.AddProjectReference_Synchronous(
+			Instances.ProjectFileOperator.AddProjectReference_Idempotent_Synchronous(
 				constructionProjectFilePath,
 				projectFilePath);
 
