@@ -13,15 +13,11 @@
     <RepositoryUrl>https://github.com/SafetyCone/R5T.F0045.git</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\R5T.F0042\source\R5T.F0042\R5T.F0042.csproj" />
     <ProjectReference Include="..\..\..\R5T.F0043\source\R5T.F0043\R5T.F0043.csproj" />
-    <ProjectReference Include="..\..\..\R5T.F0046\source\R5T.F0046\R5T.F0046.csproj" />
     <ProjectReference Include="..\..\..\R5T.F0048\source\R5T.F0048\R5T.F0048.csproj" />
     <ProjectReference Include="..\..\..\R5T.F0049\source\R5T.F0049\R5T.F0049.csproj" />
     <ProjectReference Include="..\..\..\R5T.F0055\source\R5T.F0055\R5T.F0055.csproj" />
     <ProjectReference Include="..\..\..\R5T.F0056\source\R5T.F0056\R5T.F0056.csproj" />
     <ProjectReference Include="..\..\..\R5T.F0063\source\R5T.F0063\R5T.F0063.csproj" />
-    <ProjectReference Include="..\..\..\R5T.NG0006\source\R5T.NG0006\R5T.NG0006.csproj" />
-    <ProjectReference Include="..\..\..\R5T.T0132\source\R5T.T0132\R5T.T0132.csproj" />
   </ItemGroup>
 </Project>
