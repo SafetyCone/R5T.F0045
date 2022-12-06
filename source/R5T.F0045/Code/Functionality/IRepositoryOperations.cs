@@ -58,7 +58,7 @@ namespace R5T.F0045
 				logger);
 
 			// Setup repository.
-			var repositorySourceDirectoryPath = Instances.RepositoryOperator.SetupRepository(
+			var repositorySetup = Instances.RepositoryOperator.SetupRepository(
 				repositoryLocations.LocalDirectoryPath,
 				logger);
 
@@ -67,7 +67,7 @@ namespace R5T.F0045
 			var solutionName = Instances.SolutionNameOperator.AdjustSolutionName_ForPrivacy(unadjustedSolutionName, isPrivate);
 
 			var solutionFilePath = Instances.SolutionOperator.Create_Solution_SourceDirectoryPath(
-				repositorySourceDirectoryPath,
+                repositorySetup.SourceDirectoryPath,
 				solutionName,
 				logger);
 
@@ -214,7 +214,7 @@ namespace R5T.F0045
 				logger);
 
 			// Setup repository.
-			var repositorySourceDirectoryPath = Instances.RepositoryOperator.SetupRepository(
+			var repositorySetup = Instances.RepositoryOperator.SetupRepository(
 				repositoryLocations.LocalDirectoryPath,
 				logger);
 
@@ -223,7 +223,7 @@ namespace R5T.F0045
 			var solutionName = Instances.SolutionNameOperator.AdjustSolutionName_ForPrivacy(unadjustedSolutionName, isPrivate);
 
 			var solutionFilePath = Instances.SolutionOperator.Create_Solution_SourceDirectoryPath(
-				repositorySourceDirectoryPath,
+                repositorySetup.SourceDirectoryPath,
 				solutionName,
 				logger);
 
@@ -318,7 +318,7 @@ namespace R5T.F0045
 				logger);
 
 			// Setup repository.
-			var repositorySourceDirectoryPath = Instances.RepositoryOperator.SetupRepository(
+			var repositorySetup = Instances.RepositoryOperator.SetupRepository(
 				repositoryLocations.LocalDirectoryPath,
 				logger);
 
@@ -327,7 +327,7 @@ namespace R5T.F0045
 			var solutionName = Instances.SolutionNameOperator.AdjustSolutionName_ForPrivacy(unadjustedSolutionName, isPrivate);
 
 			var solutionFilePath = Instances.SolutionOperator.Create_Solution_SourceDirectoryPath(
-				repositorySourceDirectoryPath,
+                repositorySetup.SourceDirectoryPath,
 				solutionName,
 				logger);
 
@@ -414,7 +414,7 @@ namespace R5T.F0045
 				logger);
 
 			// Setup repository.
-			var repositorySourceDirectoryPath = Instances.RepositoryOperator.SetupRepository(
+			var repositorySetup = Instances.RepositoryOperator.SetupRepository(
 				repositoryLocations.LocalDirectoryPath,
 				logger);
 
@@ -424,7 +424,7 @@ namespace R5T.F0045
 			var solutionName = Instances.SolutionNameOperator.AdjustSolutionName_ForPrivacy(unadjustedSolutionName, isPrivate);
 
 			var solutionFilePath = Instances.SolutionOperator.Create_Solution_SourceDirectoryPath(
-				repositorySourceDirectoryPath,
+                repositorySetup.SourceDirectoryPath,
 				solutionName,
 				logger);
 
@@ -464,7 +464,7 @@ namespace R5T.F0045
 			var constructionSolutionName = Instances.SolutionNameOperator.AdjustSolutionName_ForPrivacy(unadjustedConstructionSolutionName, isPrivate);
 
 			var constructionSolutionFilePath = Instances.SolutionOperator.Create_Solution_SourceDirectoryPath(
-				repositorySourceDirectoryPath,
+                repositorySetup.SourceDirectoryPath,
 				constructionSolutionName,
 				logger);
 
