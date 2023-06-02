@@ -472,8 +472,9 @@ namespace R5T.F0045
 			// Project name is just the unadjusted repository name. No adjustments needed.
 			var constructionProjectName = Instances.ProjectNameOperator.GetConstructionProjectName(projectName);
 
-			// Script project description is just the library description.
-			var constructionProjectDescription = $"Construction console project for the {projectName} library.";
+            // Script project description is just the library description.
+            // Obsolete("See R5T.O0007.IProjectDescriptionOperations.Get_ConstructionProjectDescription()")
+            var constructionProjectDescription = $"Construction console project for the {projectName} library.";
 
 			// Namespace name is just the program name.
 			var constructionProjectNamespaceName = Instances.ProjectNamespacesOperator.GetDefaultNamespaceName_FromProjectName(constructionProjectName);
