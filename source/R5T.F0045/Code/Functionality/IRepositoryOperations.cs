@@ -367,7 +367,7 @@ namespace R5T.F0045
 			return repositoryLocations;
 		}
 
-		// <summary>
+		/// <summary>
 		/// Library includes two solutions: the library solution and a construction solution. Two projects are created as well: a library project, and a constuction console project.
 		/// </summary>
 		public async Task<RepositoryLocationsPair> CreateNew_LibraryRepository(
