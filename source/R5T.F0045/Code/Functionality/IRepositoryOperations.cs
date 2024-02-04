@@ -72,11 +72,11 @@ namespace R5T.F0045
 				logger);
 
 			/// Create - project.
-			var projectName = Instances.ProjectNameOperator.GetProjectName_FromUnadjustedLibraryName(libraryDescriptors.UnadjustedName);
+			var projectName = Instances.ProjectNameOperator.Get_ProjectName_FromUnadjustedLibraryName(libraryDescriptors.UnadjustedName);
 
 			var projectDescription = Instances.ProjectOperator.Get_ProjectDescription_FromLibraryDescription(libraryDescriptors.Description);
 
-			var projectNamespaceName = Instances.ProjectNamespacesOperator.GetDefaultNamespaceName_FromProjectName(projectName);
+			var projectNamespaceName = Instances.ProjectNamespacesOperator.Get_DefaultNamespaceName_FromProjectName(projectName);
 
 			var projectFilePath = Instances.ProjectOperator.Create_New(
 				solutionFilePath,
@@ -228,11 +228,11 @@ namespace R5T.F0045
 				logger);
 
 			/// Create - project.
-			var projectName = Instances.ProjectNameOperator.GetProjectName_FromUnadjustedLibraryName(libraryDescriptors.UnadjustedName);
+			var projectName = Instances.ProjectNameOperator.Get_ProjectName_FromUnadjustedLibraryName(libraryDescriptors.UnadjustedName);
 
 			var projectDescription = Instances.ProjectOperator.Get_ProjectDescription_FromLibraryDescription(libraryDescriptors.Description);
 
-			var projectNamespaceName = Instances.ProjectNamespacesOperator.GetDefaultNamespaceName_FromProjectName(projectName);
+			var projectNamespaceName = Instances.ProjectNamespacesOperator.Get_DefaultNamespaceName_FromProjectName(projectName);
 
 			var projectFilePath = Instances.ProjectOperator.Create_New(
 				solutionFilePath,
@@ -332,11 +332,11 @@ namespace R5T.F0045
 				logger);
 
 			/// Create - project.
-			var projectName = Instances.ProjectNameOperator.GetProjectName_FromUnadjustedLibraryName(libraryDescriptors.UnadjustedName);
+			var projectName = Instances.ProjectNameOperator.Get_ProjectName_FromUnadjustedLibraryName(libraryDescriptors.UnadjustedName);
 
 			var projectDescription = Instances.ProjectOperator.Get_ProjectDescription_FromLibraryDescription(libraryDescriptors.Description);
 
-			var projectNamespaceName = Instances.ProjectNamespacesOperator.GetDefaultNamespaceName_FromProjectName(projectName);
+			var projectNamespaceName = Instances.ProjectNamespacesOperator.Get_DefaultNamespaceName_FromProjectName(projectName);
 
 			var projectFilePath = Instances.ProjectOperator.Create_New(
 				solutionFilePath,
@@ -430,13 +430,13 @@ namespace R5T.F0045
 
 			// Create - project.
 			// Project name is just the unadjusted repository name. No adjustments needed.
-			var projectName = Instances.ProjectNameOperator.GetProjectName_FromUnadjustedLibraryName(libraryDescriptors.UnadjustedName);
+			var projectName = Instances.ProjectNameOperator.Get_ProjectName_FromUnadjustedLibraryName(libraryDescriptors.UnadjustedName);
 
 			// Script project description is just the library description.
 			var projectDescription = Instances.ProjectOperator.Get_ProjectDescription_FromLibraryDescription(libraryDescriptors.Description);
 
 			// Namespace name is just the program name.
-			var projectNamespaceName = Instances.ProjectNamespacesOperator.GetDefaultNamespaceName_FromProjectName(projectName);
+			var projectNamespaceName = Instances.ProjectNamespacesOperator.Get_DefaultNamespaceName_FromProjectName(projectName);
 
 			var projectFilePath = Instances.ProjectOperator.Create_New(
 				solutionFilePath,
@@ -477,7 +477,7 @@ namespace R5T.F0045
             var constructionProjectDescription = $"Construction console project for the {projectName} library.";
 
 			// Namespace name is just the program name.
-			var constructionProjectNamespaceName = Instances.ProjectNamespacesOperator.GetDefaultNamespaceName_FromProjectName(constructionProjectName);
+			var constructionProjectNamespaceName = Instances.ProjectNamespacesOperator.Get_DefaultNamespaceName_FromProjectName(constructionProjectName);
 
 			var constructionProjectFilePath = Instances.ProjectOperator.Create_New(
 				solutionFilePath,
