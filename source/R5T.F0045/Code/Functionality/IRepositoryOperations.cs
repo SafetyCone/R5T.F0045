@@ -20,7 +20,7 @@ namespace R5T.F0045
 			ILogger logger)
 		{
 			/// Run.
-			logger.LogInformation($"Creating web application repository '{endeavorName}'...");
+			logger.LogInformation("Creating web application repository '{endeavorName}'...", endeavorName);
 
 			/// Library.
 			var libraryDescriptors = F0043.LibraryOperator.Instance.GetDescriptors(
@@ -35,7 +35,7 @@ namespace R5T.F0045
 				libraryDescriptors.Description,
 				owner);
 
-			logger.LogInformation($"Repository name: '{repositoryDescriptors.OwnedName}'.");
+			logger.LogInformation("Repository owner name: '{repositoryOwnerName}'.", repositoryDescriptors.OwnedName);
 
 			var repositorySpecification = Instances.RepositoryOperator.Get_RepositorySpecification(
 				owner,
@@ -64,7 +64,7 @@ namespace R5T.F0045
 
 			/// Create - Solution.
 			var unadjustedSolutionName = Instances.SolutionNameOperator.GetUnadjustedSolutionName_FromUnadjustedLibraryName(libraryDescriptors.UnadjustedName);
-			var solutionName = Instances.SolutionNameOperator.AdjustSolutionName_ForPrivacy(unadjustedSolutionName, isPrivate);
+			var solutionName = Instances.SolutionNameOperator.Adjust_Name_ForPrivacy(unadjustedSolutionName, isPrivate);
 
 			var solutionFilePath = Instances.SolutionOperator.Create_Solution_SourceDirectoryPath(
                 repositorySetup.SourceDirectoryPath,
@@ -124,7 +124,7 @@ namespace R5T.F0045
 			ILogger logger)
 		{
 			/// Run.
-			logger.LogInformation($"Creating console repository '{endeavorName}'...");
+			logger.LogInformation("Creating console repository '{endeavorName}'...", endeavorName);
 
 			/// Library.
 			var libraryDescriptors = F0043.LibraryOperator.Instance.GetDescriptors(
@@ -139,7 +139,7 @@ namespace R5T.F0045
 				libraryDescriptors.Description,
 				owner);
 
-			logger.LogInformation($"Repository name: '{repositoryDescriptors.OwnedName}'.");
+			logger.LogInformation("Repository owner name: '{repositoryOwnerName}'.", repositoryDescriptors.OwnedName);
 
 			var repositorySpecification = Instances.RepositoryOperator.Get_RepositorySpecification(
 				owner,
@@ -176,7 +176,7 @@ namespace R5T.F0045
 			ILogger logger)
 		{
 			/// Run.
-			logger.LogInformation($"Creating program-as-service console repository '{endeavorName}'...");
+			logger.LogInformation("Creating program-as-service console repository '{endeavorName}'...", endeavorName);
 
 			/// Library.
 			var libraryDescriptors = F0043.LibraryOperator.Instance.GetDescriptors(
@@ -191,7 +191,7 @@ namespace R5T.F0045
 				libraryDescriptors.Description,
 				owner);
 
-			logger.LogInformation($"Repository name: '{repositoryDescriptors.OwnedName}'.");
+			logger.LogInformation("Repository owner name: '{repositoryOwnerName}'.", repositoryDescriptors.OwnedName);
 
 			var repositorySpecification = Instances.RepositoryOperator.Get_RepositorySpecification(
 				owner,
@@ -220,7 +220,7 @@ namespace R5T.F0045
 
 			/// Create - Solution.
 			var unadjustedSolutionName = Instances.SolutionNameOperator.GetUnadjustedSolutionName_FromUnadjustedLibraryName(libraryDescriptors.UnadjustedName);
-			var solutionName = Instances.SolutionNameOperator.AdjustSolutionName_ForPrivacy(unadjustedSolutionName, isPrivate);
+			var solutionName = Instances.SolutionNameOperator.Adjust_Name_ForPrivacy(unadjustedSolutionName, isPrivate);
 
 			var solutionFilePath = Instances.SolutionOperator.Create_Solution_SourceDirectoryPath(
                 repositorySetup.SourceDirectoryPath,
@@ -280,7 +280,7 @@ namespace R5T.F0045
 			ILogger logger)
 		{
 			/// Run.
-			logger.LogInformation($"Creating console repository '{endeavorName}'...");
+			logger.LogInformation("Creating console repository '{endeavorName}'...", endeavorName);
 
 			/// Library.
 			var libraryDescriptors = F0043.LibraryOperator.Instance.GetDescriptors(
@@ -295,7 +295,7 @@ namespace R5T.F0045
 				libraryDescriptors.Description,
 				owner);
 
-			logger.LogInformation($"Repository name: '{repositoryDescriptors.OwnedName}'.");
+			logger.LogInformation("Repository owner name: '{repositoryOwnerName}'.", repositoryDescriptors.OwnedName);
 
 			var repositorySpecification = Instances.RepositoryOperator.Get_RepositorySpecification(
 				owner,
@@ -324,7 +324,7 @@ namespace R5T.F0045
 
 			/// Create - Solution.
 			var unadjustedSolutionName = Instances.SolutionNameOperator.GetUnadjustedSolutionName_FromUnadjustedLibraryName(libraryDescriptors.UnadjustedName);
-			var solutionName = Instances.SolutionNameOperator.AdjustSolutionName_ForPrivacy(unadjustedSolutionName, isPrivate);
+			var solutionName = Instances.SolutionNameOperator.Adjust_Name_ForPrivacy(unadjustedSolutionName, isPrivate);
 
 			var solutionFilePath = Instances.SolutionOperator.Create_Solution_SourceDirectoryPath(
                 repositorySetup.SourceDirectoryPath,
@@ -378,7 +378,7 @@ namespace R5T.F0045
 			ILogger logger)
 		{
 			/// Run.
-			logger.LogInformation($"Creating library repository '{endeavorName}'...");
+			logger.LogInformation("Creating library repository '{endeavorName}'...", endeavorName);
 
 			/// Library.
 			var libraryDescriptors = F0043.LibraryOperator.Instance.GetDescriptors(
@@ -393,7 +393,7 @@ namespace R5T.F0045
 				libraryDescriptors.Description,
 				owner);
 
-			logger.LogInformation($"Repository name: '{repositoryDescriptors.OwnedName}'.");
+			logger.LogInformation("Repository owner name: '{repositoryOwnerName}'.", repositoryDescriptors.OwnedName);
 
 			var repositorySpecification = Instances.RepositoryOperator.Get_RepositorySpecification(
 				owner,
@@ -421,7 +421,7 @@ namespace R5T.F0045
 			/// Create - Solution.
 			// Now create the solution and project.
 			var unadjustedSolutionName = Instances.SolutionNameOperator.GetUnadjustedSolutionName_FromUnadjustedLibraryName(libraryDescriptors.UnadjustedName);
-			var solutionName = Instances.SolutionNameOperator.AdjustSolutionName_ForPrivacy(unadjustedSolutionName, isPrivate);
+			var solutionName = Instances.SolutionNameOperator.Adjust_Name_ForPrivacy(unadjustedSolutionName, isPrivate);
 
 			var solutionFilePath = Instances.SolutionOperator.Create_Solution_SourceDirectoryPath(
                 repositorySetup.SourceDirectoryPath,
@@ -461,7 +461,7 @@ namespace R5T.F0045
 
 			// Construction solution.
 			var unadjustedConstructionSolutionName = Instances.SolutionNameOperator.GetConstructionSolutionName(unadjustedSolutionName);
-			var constructionSolutionName = Instances.SolutionNameOperator.AdjustSolutionName_ForPrivacy(unadjustedConstructionSolutionName, isPrivate);
+			var constructionSolutionName = Instances.SolutionNameOperator.Adjust_Name_ForPrivacy(unadjustedConstructionSolutionName, isPrivate);
 
 			var constructionSolutionFilePath = Instances.SolutionOperator.Create_Solution_SourceDirectoryPath(
                 repositorySetup.SourceDirectoryPath,
