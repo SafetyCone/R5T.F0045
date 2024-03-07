@@ -460,7 +460,7 @@ namespace R5T.F0045
 				projectFilePath);
 
 			// Construction solution.
-			var unadjustedConstructionSolutionName = Instances.SolutionNameOperator.GetConstructionSolutionName(unadjustedSolutionName);
+			var unadjustedConstructionSolutionName = Instances.SolutionNameOperator.Get_ConstructionSolutionName(unadjustedSolutionName);
 			var constructionSolutionName = Instances.SolutionNameOperator.Adjust_Name_ForPrivacy(unadjustedConstructionSolutionName, isPrivate);
 
 			var constructionSolutionFilePath = Instances.SolutionOperator.Create_Solution_SourceDirectoryPath(
